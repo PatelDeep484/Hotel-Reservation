@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="321.0" prefWidth="225.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.HotelReservation">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Hotel reservation System" />
+      <GridPane layoutX="15.0" layoutY="42.0" prefHeight="258.0" prefWidth="195.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Hyperlink focusTraversable="false" onAction="#bookaRoom" text="Book a Room" />
+            <Hyperlink focusTraversable="false" onAction="#billService" text="Bill Service" GridPane.rowIndex="1" />
+            <Hyperlink focusTraversable="false" onAction="#availableBookings" text="Available Rooms" GridPane.rowIndex="3" />
+            <Hyperlink cacheShape="false" focusTraversable="false" onAction="#currentBookings" text="Current Bookings" GridPane.rowIndex="2" />
+            <Hyperlink focusTraversable="false" onAction="#exit" text="Exit" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
